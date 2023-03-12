@@ -10,7 +10,8 @@ namespace MovementServer
     {
         static void Main(string[] args)
         {
-            
+            string hostName = Dns.GetHostName();
+            IPHostEntry serverIP = Dns.GetHostEntry(hostName);
         }
     }
 }
